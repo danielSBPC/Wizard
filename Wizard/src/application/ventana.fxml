@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <AnchorPane fx:id="pane1" layoutX="133.0" layoutY="200.0" prefHeight="600.0" prefWidth="480.0" style="-fx-background-color: #3AB1A5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="188.0" layoutY="68.0" prefHeight="40.0" prefWidth="124.0" text="Explore" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="160.0" layoutY="108.0" prefHeight="68.0" prefWidth="179.0" text="A world without limits, where everything is possible..." textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <ImageView fitHeight="193.0" fitWidth="200.0" layoutX="150.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@island.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane2" layoutX="143.0" layoutY="210.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ED9A2F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="187.0" layoutY="68.0" text="Discover" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="160.0" layoutY="108.0" prefHeight="68.0" prefWidth="179.0" text="Go inside and get ready to find hidden secrets..." textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <ImageView fitHeight="193.0" fitWidth="200.0" layoutX="150.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@waterfall.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane3" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #9A3AB1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="216.0" layoutY="68.0" text="Enjoy" textFill="WHITE">
+               <font>
+                  <Font name="Gadugi" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="160.0" layoutY="108.0" prefHeight="68.0" prefWidth="179.0" text="Feel the sensation of freedom, relax and let yourself go..." textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <ImageView fitHeight="193.0" fitWidth="200.0" layoutX="150.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@mountains.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="43.0" layoutY="508.0" onAction="#backAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #00000020; -fx-background-radius: 50px;" text="&lt;" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="382.0" layoutY="508.0" onAction="#nextAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #00000020; -fx-background-radius: 50px;" text="&gt;" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="countLabel" alignment="CENTER" layoutX="104.0" layoutY="525.0" prefHeight="17.0" prefWidth="269.0" text="1/3" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
